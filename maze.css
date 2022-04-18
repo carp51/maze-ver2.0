@@ -1,0 +1,4 @@
+.speed {
+    display: inline-block;      /* インラインブロック要素にする */
+    height: 50px;              /* 高さ指定 */
+}
