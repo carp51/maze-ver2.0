@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迷路自動生成</title>
+
+</head>
+
+<body>
+    <div>
+        <input type="text" id="count">
+        <button type="button" onclick="start()">自動生成</button>
+        <button type="button" id="BFS" onclick="BFS_start()">幅優先探索</button>
+        <button type="button" id="DFS" onclick="DFS_start()">深さ優先探索</button>
+        
+    </div>
+
+    <div class="speed">
+        <p>探索の速度</p>
+        <input type="range" id="search_speed" min="0" max="500" step="20" value="500">
+    </div>
+
+    <div class="speed">
+        <p>解の速度</p>
+        <input type="range" id="ans_speed" min="0" max="500" step="20" value="500">
+    </div>
+
+    <div>
+        <canvas width="700" height="700"></canvas>
+    </div>
+
+    <link rel="stylesheet" href="maze.css">
+    <script src="maze.js"></script>
+    <script src="BFS.js"></script>
+    <script src="DFS.js"></script>
+
+</body>
+
+</html>
